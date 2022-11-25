@@ -1,22 +1,17 @@
-print("Hello, world.")
+class Student:
+    ...
 
 
-x = int(input("What's x? "))
-y = int(input("What's y? "))
-if x != y:
-    print("x is not equal to y")
-else:
-    print("x is equal to y")
 
+def main():
+    student = get_student()
+    print(f'{student.name} from {student.house}')
 
-score = int(input("Score: "))
-if score >= 90:
-    print("Grade A")
-elif score >= 80:
-    print("Grade B")
-elif score >= 70:
-    print("Grade C")
-elif score >= 60:
-    print("Grade D")
-else:
-    print("Grade F")
+def get_student():
+    name = input("Name: ")
+    house = input("House: ")
+    student = Student(name, house)
+    return student
+
+if __name__ == "__main__":
+    main()

@@ -184,7 +184,7 @@ while True:
                     loop = 7
                 elif choice10.strip().lower() == ("leave"):
                     print(
-                        "The fairy takes a deep breath of exasperation, waiting for you to make the right decsion."
+                        "The fairy takes a deep breath of exasperation, waiting for you to make the right decision."
                     )
                     print(
                         "_______________________________________________________________________________________"
@@ -231,7 +231,7 @@ while True:
             print("__________________________________________________________")
             print("You start to drink the elixir and immediately spit it out.")
             print("You look at the bottle: Kombucha?! That stupid hipster!")
-            print("You glare at the fiary.")
+            print("You glare at the fairy.")
             print("\"Hey, don't blame me, man. I'm just a part of the program.\"")
             print("You sigh, and open the door.")
             print(
@@ -270,7 +270,7 @@ while True:
                 '"My hero! You have saved me! My father, the Wise King, will give you his kingdom and my hand in marriage for this act of heroism!"'
             )
             print(
-                '"Oh brave hero, oh valient savior, I pledge myself to be your loyal and loving wife if you will free me from this place of evil!"'
+                '"Oh brave hero, oh valiant savior, I pledge myself to be your loyal and loving wife if you will free me from this place of evil!"'
             )
             loop = 13
         else:
