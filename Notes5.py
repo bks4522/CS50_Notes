@@ -1,17 +1,26 @@
-class Student:
+class Wizard:
+    def __init__(self, name):
+        if not name:
+                raise ValueError("Missing Name")
+            self.name = name
     ...
 
 
-def main():
-    student = get_student()
-    print(f"{student.name} from {student.house}")
+class Student(Wizard):
+    def __init__(self, name, house):
+        super().__init__(name)
+        self.house = house
+        
+    ...
 
-def get_student():
-    student = Student()
-    student.name = input("Name: ")
-    student.house = input("House: ")
-    return student
+class Professor(Wizard):
+    def __init__(self, name, subject):
+        super().__init__(name)
+        self.subject = subject
     
-if __name__ == "__main__":
-    main()
-    
+    ...
+
+
+wizard = Wizard("Albus")    
+student = Student("Harry", "Gryffindor")
+professor = Professor("Severus", "Defense Against the Dark Arts")
